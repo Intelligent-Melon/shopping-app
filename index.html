@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List (Cloud Synced)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Shopping List</h1>
+
+    <div id="shop-selector">
+        <select id="shop">
+            <option value="aldi">Aldi</option>
+            <option value="tesco">Tesco</option>
+        </select>
+    </div>
+
+    <div class="input-container">
+        <input id="item" placeholder="Item name">
+        <input id="weekly" placeholder="Weekly need">
+        <input id="current" placeholder="Current amount">
+        <button onclick="addItem()">Add / Update</button>
+    </div>
+
+    <h2 id="shop-title">Aldi Items</h2>
+    <ul id="list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
